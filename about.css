@@ -1,0 +1,328 @@
+@font-face {
+  font-family: 'Roboto Black';
+  src: url(fonts/Roboto-Black.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Light';
+  src: url(fonts/Roboto-Light.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Medium Italic';
+  src: url(fonts/Roboto-MediumItalic.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+  /* HIRCHUK */
+  
+  *{
+    color: white;
+  }
+  
+  
+  body{
+    scroll-behavior: smooth;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  /* HEADER */
+
+ a{
+    color: #2F56B0;
+    position: relative;
+    text-decoration: none;
+  }
+  .headerWrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 2px solid transparent;
+  border-image: radial-gradient(circle, rgb(0, 85, 255), rgb(3, 44, 168), rgb(3, 2, 77));
+  border-image-slice: 1;
+    position:sticky;
+  top:0;
+  padding:10px;
+  z-index:9999;
+  margin-bottom:10px;
+  background-color:#FFFFFF;
+  
+  }
+
+header {
+  list-style: none;
+  display: flex;
+}
+.logo {
+  width: 35%;
+  margin-right: auto;
+}
+  .a-logo{
+    width: auto;
+    margin-right: auto;
+  }  nav {
+    margin-bottom: auto;
+    margin-top: auto;
+    text-decoration: none;
+    font-family:"Roboto Light";
+	margin-right:0;
+  }
+  nav a {
+    display: inline-flex;
+    color: black;
+    font-size: 1em;
+  }
+  nav ul {
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color: black;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 1;
+  }
+  
+  nav ul ul li {
+    display: block;
+    float: none;
+  }
+  
+  nav ul ul li a {
+    display: block;
+    padding: 5px;
+    color: black;
+  }
+  
+  nav ul li:hover > ul {
+    display: inherit;
+  }
+
+
+  /* -------------------------------- */
+
+  h1{
+      font-family: "Roboto Black";
+      font-size: 52px;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+  }
+  h2{
+    font-family: "Roboto Black";
+	color:black;
+	text-align:center;
+	padding-bottom:5%;
+	margin-top:0;
+  }
+  section{
+    border-radius: 30px;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+    text-align: left;
+
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+	
+}
+ .indent{ text-indent:35px;
+	color:black;
+	display:inline;}
+ .desc {
+	 
+	 font-weight:normal;
+	 margin-right:20%;
+	 margin-left:20%;
+	 color:black;
+	 display:flex;
+	 flex-direction:column;
+	 white-space: nowrap;
+ }
+#maxwell{ display:flex;
+	flex-direction:column;
+	padding-bottom:0;
+	margin-bottom:0;
+	margin:0 auto;
+	padding:0;
+	border: 5px solid #00A8FF;
+}
+#marion{
+	display:flex;
+	flex-direction:column;
+	width:25%;
+	height:auto;
+	margin-bottom:5%;
+	padding-bottom:0%;
+	margin-top:0;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:0%;
+	border: 5px solid #00A8FF;
+}
+
+  /* footer section */
+  footer{
+      font-family: "Roboto Light";
+      color: black;
+
+      border-top: 2px solid transparent;
+      border-image: radial-gradient(circle, rgb(0, 85, 255), rgb(3, 44, 168), rgb(3, 2, 77));
+      border-image-slice: 1;
+      margin-top: 0.5em;
+      padding-top: 0.5em;
+      text-align: center;
+  }
+  /* tried to do the phonecall thing for mobile and idk it isn't working. Will probably delete in a fit of rage later*/
+  #mobile{display:none;}
+  #desktop{ display:inline;
+	text-decoration:none;}
+  .footerWrapper{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /********************************/
+  
+  .red-divider-btw-products{
+    border: none;
+    height: 2px;
+    width: 80%;
+    background: radial-gradient(circle, rgb(0, 85, 255), rgb(3, 44, 168), rgb(3, 2, 77));
+  }
+  .italics{
+	font-family: Roboto-MediumItalic;
+	color: black;
+	font-style: italic;
+	display: flex;
+	flex-direction: column;
+	white-space: nowrap
+	}
+
+  /*** FIT IT TO MEDIA ********************************/
+
+  #logobottom{
+    width: 35%;
+  }/*Media for moblie users*/
+  @media only screen and (max-width: 800px) {
+    /********************************/
+
+    section{
+      border-radius: 30px;
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 52vh;
+      text-align: center;
+  
+      padding-left: 2em;
+      padding-right: 2em;
+      margin-bottom: 10px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    
+  }
+.textProductDescription{
+  font-size: 14px;
+  font-family: "Roboto Light";
+}
+.logo {
+  width: 75%;
+  margin-right: auto;
+}
+
+nav a {
+  display: inline-flex;
+  color: black;
+  font-size: 1em;
+  padding-top:.5em
+}
+nav ul li:focus > ul {
+    display: inherit;
+  }
+.headerWrapper {
+  padding:00;
+  margin-bottom:0;
+  margin-top:0;
+  
+  
+  }
+  nav ul ul {
+    display: none;
+    position: relative;
+    top: 100%;
+    left: -25%;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 999;
+  }
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color: black;
+    position: relative;
+    text-decoration: none;
+	font-size:1em;
+  }
+  h1{
+	  font-size:2em;
+  }
+ .desc{
+ margin:0 5%;
+ }
+  
+  #maxwell{ display:flex;
+	flex-direction:column;
+	padding-bottom:0;
+	margin-bottom:0;
+	margin:0 auto;
+	padding:0;
+	border: 5px solid #00A8FF;
+}
+#marion{
+	display:grid;
+	flex-direction:column;
+	width:90%;
+	height:auto;
+	margin-bottom:5%;
+	padding-bottom:0%;
+	margin-top:0;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:0%;
+	border: 5px solid #000000;
+}
+}
+    /********************************/

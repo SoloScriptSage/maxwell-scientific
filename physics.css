@@ -1,0 +1,500 @@
+   @font-face {
+    font-family: Roboto Black;
+    src: url(fonts/Roboto-Black.ttf);
+  }
+  @font-face {
+    font-family: Roboto Light;
+    src: url(fonts/Roboto-Light.ttf);
+  }
+  @font-face {
+    font-family: Roboto Medium Italic;
+    src: url(fonts/Roboto-MediumItalic.ttf);
+  }
+
+  /* HIRCHUK */
+  
+  *{
+    color: white;
+  }
+  
+  
+  body{
+    scroll-behavior: smooth;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  /* HEADER */
+
+ a{
+    color: #2F56B0;
+    position: relative;
+    text-decoration: none;
+  }
+  .headerWrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 2px solid transparent;
+  border-image: radial-gradient(circle, rgb(0, 85, 255), rgb(3, 44, 168), rgb(3, 2, 77));
+  border-image-slice: 1;
+    position:sticky;
+  top:0;
+  padding:10px;
+  z-index:9999;
+  margin-bottom:10px;
+  background-color:#FFFFFF;
+  
+  }
+
+header {
+  list-style: none;
+  display: flex;
+}
+.logo {
+  width: 35%;
+  margin-right: auto;
+  margin-left:10%;
+}
+  .a-logo{
+    width: auto;
+    margin-right: auto;
+  }  nav {
+    margin-bottom: auto;
+    margin-top: auto;
+    text-decoration: none;
+    font-family: Roboto Light;
+	margin-right:0;
+  }
+  nav a {
+    display: inline-flex;
+    color: black;
+    font-size: 1em;
+  }
+  nav ul {
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color: black;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 1;
+  }
+  
+  nav ul ul li {
+    display: block;
+    float: none;
+  }
+  
+  nav ul ul li a {
+    display: block;
+    padding: 5px;
+    color: black;
+  }
+  
+  nav ul li:hover > ul {
+    display: inherit;
+  }
+
+
+
+
+
+  h1{
+      font-family: Roboto Black;
+      font-size: 52px;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+  }
+  h2{
+    font-family: Roboto Black;
+  }
+  .textProductDescription{
+    font-family: Roboto Light;
+  }
+
+
+  /* HIRCHUK */
+
+
+  .SHOPNOW-a{
+	background-color: #222;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  }
+  .SHOPNOW-a:hover,
+	.SHOPNOW-a:focus{
+		opacity: .75;
+	}
+
+  section{
+    border-radius: 30px;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+    text-align: center;
+
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+	
+}
+      .smallEventDescription{
+        font-family: Roboto-Medium;
+      }
+      .Newton-and-the-Apple-section{
+        color: white;
+        margin-top: 0.5em;
+        background-image: url(Photos/darkBackrgoundPhotos/Newton\ and\ the\ Apple.jpg);
+      }
+       footer{
+      
+      font-family: Roboto Light;
+      color: black;
+
+      border-top: 2px solid transparent;
+      border-image: radial-gradient(circle, rgb(0, 85, 255), rgb(3, 44, 168), rgb(3, 2, 77));
+      border-image-slice: 1;
+      margin-top: 0.5em;
+      padding-top: 0.5em;
+      text-align: center;
+  }
+  .footerWrapper{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /********************************/
+
+  .products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .product-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 1em;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+	transition: transform .5s;
+
+
+  }
+  .product-card img:hover {
+  transform: scale(1.5);
+}
+  .product-card h3 {
+    color: #222;
+    font-family: Roboto-Medium;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .product-card p {
+    color: #222;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .product-card span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .product-card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .product-card button:hover {
+    background-color: #0062cc;
+  }
+	
+  /********************************/
+
+  .red-divider-btw-products{
+    border: none;
+    height: 2px;
+    width: 80%;
+    background: radial-gradient(circle, rgb(0, 85, 255), rgb(3, 44, 168), rgb(3, 2, 77));
+  }
+  
+  /********************************/
+
+  .comments{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .comment {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .avatar {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  .avatar img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .author {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .text {
+    width: 80%;
+    margin: 5px 0 0;
+    line-height: 1.5;
+  }
+  .comment .text{
+    font-family: Roboto-Regular;
+	color:black;
+  }
+  .comment .author{
+    font-family: Roboto-Medium;
+	color:black;
+  }
+
+
+    /*****I DON'T KNOW WHY IT'S NOT WORKING***********************/
+    @media screen and (max-width: 768px) {
+  .logo {
+    width: 70%;
+    margin-right: auto;
+  }
+  nav ul ul {
+    display: none;
+    position: relative;
+    top: 100%;
+    left: -25%;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 999;
+  }
+  section{
+      border-radius: 30px;
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 52vh;
+      text-align: center;
+  
+      padding-left: 2em;
+      padding-right: 2em;
+      margin-bottom: 10px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    
+  }
+  .textProductDescription{font-size:125%;}
+.smallEventDescription{font-size:125%;}
+h1{font-size:250%;}
+.product-card img {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+	transition: transform .5s;
+	margin-left:10%;
+
+
+  }
+  .product-card img:hover {
+  transform: scale(1.5);
+}
+	.avatar{width:25%;
+	height:auto;}
+  }
+
+
+  
+  @media only screen and (max-width: 412px) {
+    /********************************/
+
+   section{
+      border-radius: 30px;
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 52vh;
+      text-align: center;
+  
+      padding-left: 2em;
+      padding-right: 2em;
+      margin-bottom: 10px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    
+  }
+.text{
+  font-size: 14px;
+  font-family: Roboto Light;
+}
+
+.logo {
+  width: 90%;
+  margin-right: auto;
+  margin-left:0;
+}
+
+nav a {
+  display: inline-flex;
+  color: black;
+  font-size: 1em;
+  padding-top:.5em
+}
+nav ul li:focus > ul {
+    display: inherit;
+  }
+.headerWrapper {
+  padding:00;
+  margin-bottom:0;
+  margin-top:0;
+  
+  
+  }
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -25%;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 999;
+  }
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color: black;
+    position: relative;
+    text-decoration: none;
+	font-size:1em;
+  }
+  h1{
+	  font-size:200%;
+  }
+  h3 {
+	font-size:1em;  
+	}
+	
+  .product-card img:hover {
+  transform: none;
+}
+.textProductDescription{font-size:100%;}
+.smallEventDescription{font-size:100%;}
+.product-card {
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 1em;
+  }
+  .product-card span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+    display: flex;
+  
+  }
+  .red-divider-btw-products{
+    display:none;
+  }
+  .avatar{
+	  display:none;
+	  
+  }
+@media only screen and (max-width: 260px) {
+  
+  .product-card img{
+	display:none;
+  }
+  .avatar{
+	  width:10%;
+	  height:auto;
+  }
+ .textProductDescription{font-size:50%;
+	display:none;}
+.smallEventDescription{font-size:50%;
+display:none;}
+.author{margin-top:10%;}
+  }
+  
